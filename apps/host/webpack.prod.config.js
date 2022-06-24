@@ -13,8 +13,8 @@ module.exports = withModuleFederation({
    * ]
    */
     remotes: [
-      ["shop", 'https://jovial-boba-cb6ba9.netlify.app/apps/shop/'],
-      ["about", 'https://jovial-boba-cb6ba9.netlify.app/apps/about/'],
-      ["cart", 'https://jovial-boba-cb6ba9.netlify.app/apps/cart/']
+      ["shop", 'https://ng-shop-app.netlify.app/'],
+      ["about", 'https://ng-about-app.netlify.app/'],
+      ["cart", 'https://ng-cart-app.netlify.app/']
     ]
 });
