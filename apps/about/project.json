@@ -15,6 +15,7 @@
         "tsConfig": "apps/about/tsconfig.app.json",
         "assets": ["apps/about/src/favicon.ico", "apps/about/src/assets"],
         "styles": ["apps/about/src/styles.css"],
+        "publicHost": "https://62b55a8408329f40cdbb5a3b--jovial-boba-cb6ba9.netlify.app/about/",
         "scripts": [],
         "customWebpackConfig": {
           "path": "apps/about/webpack.config.js"
