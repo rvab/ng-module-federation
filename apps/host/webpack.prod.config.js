@@ -13,8 +13,8 @@ module.exports = withModuleFederation({
    * ]
    */
     remotes: [
-      ["shop", 'https://ng-shop-app.netlify.app/'],
-      ["about", 'https://ng-about-app.netlify.app/'],
-      ["cart", 'https://ng-cart-app.netlify.app/']
+      ["shop", 'https://ng-module-federation.netlify.app/shop'],
+      ["about", 'https://ng-module-federation.netlify.app/about'],
+      ["cart", 'https://ng-module-federation.netlify.app/cart']
     ]
 });
