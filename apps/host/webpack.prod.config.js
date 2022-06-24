@@ -12,4 +12,9 @@ module.exports = withModuleFederation({
    *   ['app2', 'https://app2.example.com'],
    * ]
    */
+    remotes: [
+      ["shop", 'https://62b55a8408329f40cdbb5a3b--jovial-boba-cb6ba9.netlify.app/shop/'],
+      ["about", 'https://62b55a8408329f40cdbb5a3b--jovial-boba-cb6ba9.netlify.app/about/'],
+      ["cart", 'https://62b55a8408329f40cdbb5a3b--jovial-boba-cb6ba9.netlify.app/cart/']
+    ]
 });
