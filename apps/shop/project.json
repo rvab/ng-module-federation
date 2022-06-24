@@ -8,7 +8,7 @@
       "executor": "@nrwl/angular:webpack-browser",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/apps/shop",
+        "outputPath": "dist/shop",
         "index": "apps/shop/src/index.html",
         "main": "apps/shop/src/main.ts",
         "polyfills": "apps/shop/src/polyfills.ts",
