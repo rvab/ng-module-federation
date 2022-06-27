@@ -12,11 +12,11 @@ module.exports = withModuleFederation({
    *   ['app2', 'https://app2.example.com'],
    * ]
    */
-  // remotes: [
-  //     ['shop', 'http://localhost:3000/shop/'],
-  //     ['cart', 'http://localhost:3000/cart/'],
-  //     ['about', 'http://localhost:3000/about/'],
-  //   ],
+    // remotes: [
+    //   ['shop', 'http://localhost:3000/shop/'],
+    //   ['cart', 'http://localhost:3000/cart/'],
+    //   ['about', 'http://localhost:3000/about/'],
+    // ],
   remotes: [
     ["shop", 'https://ng-module-federation.netlify.app/shop'],
     ["about", 'https://ng-module-federation.netlify.app/about'],
