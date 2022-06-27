@@ -9,25 +9,38 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { TestShopComponent } from './test-shop/test-shop.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TestShopComponent],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(
+    // BrowserModule,
+    RouterModule.forChild(
       [
         {
           path: '',
-          loadChildren: () =>
-            import('./remote-entry/entry.module').then(
-              (m) => m.RemoteEntryModule
-            ),
+          redirectTo: 'test',
+          pathMatch: 'full'
         },
+        // {
+        //   path: '',
+        //   loadChildren: () =>
+        //     import('./remote-entry/entry.module').then(
+        //       (m) => m.RemoteEntryModule
+        //     ),
+        // },
+        {
+          path: 'test',
+          component: TestShopComponent
+        }
       ],
-      { initialNavigation: 'enabledBlocking' }
     ),
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule {
+  constructor() {
+    console.log('Shops app module')
+  }
+}

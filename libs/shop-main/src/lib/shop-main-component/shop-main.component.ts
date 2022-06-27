@@ -13,7 +13,6 @@ export class ShopMainComponent {
   }
 
   openCart() {
-    console.log('coming here ----')
     this.router.navigate(['cart'])
   }
 

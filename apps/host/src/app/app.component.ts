@@ -10,7 +10,8 @@ export class AppComponent {
   title = 'host';
 
   constructor(private router: Router) {
-    this.router.navigate(['shop'])
+    console.log(this.router)
+    // this.router.navigate(['shop'])
   }
 
 }

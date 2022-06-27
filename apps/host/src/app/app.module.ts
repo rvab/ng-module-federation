@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
             import('about/Module').then((m) => m.RemoteEntryModule),
         },
       ],
-      { initialNavigation: 'enabledBlocking' }
+      { useHash: true, initialNavigation: 'enabledBlocking', onSameUrlNavigation: 'reload' }
     ),
   ],
   providers: [],

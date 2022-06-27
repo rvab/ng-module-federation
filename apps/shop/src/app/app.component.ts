@@ -4,4 +4,10 @@ import { Component } from '@angular/core';
   selector: 'ng-module-federation-root',
   template: '<router-outlet></router-outlet>',
 })
-export class AppComponent {}
+export class AppComponent {
+
+  constructor() {
+    console.log('coming here --------')
+  }
+
+}
