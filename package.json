@@ -6,7 +6,7 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
-    "build": "nx build && rm -rf production && mkdir production && cp -r dist/shop/* production/shop && cp -r dist/cart/* production/cart && cp -r dist/about/* production/about",
+    "build": "nx build",
     "build:shop": "nx build shop && cp _headers dist/apps/shop/",
     "build:cart": "nx build cart && cp _headers dist/apps/cart/",
     "build:about": "nx build about && cp _headers dist/apps/about/",
